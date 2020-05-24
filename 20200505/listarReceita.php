@@ -7,12 +7,12 @@ Objeto "Receita" instanciada no sistema: <br />
 
 <?php
 
-	foreach($_SESSION["receita"] as $r) {
+	foreach($_SESSION["Receita"] as $i=>$receita) {
 		echo"
-			Tipo receita: $r->tipo <br />
-			Lista de ingredientes: $r->ingredientes <br />
-			Modo de Preparo: $r->preparo <br />
-			Nome da receita: $r->nome <br />
+			Tipo receita: $receita->tipo <br />
+			Lista de ingredientes: $receita->ingredientes <br />
+			Modo de Preparo: $receita->preparo <br />
+			Nome da receita: $receita->nome <br />
 			</hr>";
 	}	
 			

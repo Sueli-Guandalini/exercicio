@@ -1,9 +1,7 @@
 <?php
 include "cabecalho.php";
 
-if(empty($_POST)){
 echo'
-
 <form action="recebe_form_receita.php method="POST">
 	<fieldset>
 	<h3><u>Cadastro de receitas</u></h3>
@@ -30,8 +28,6 @@ echo'
 	</fieldset>
 </form>';
 
-
-}
 ?>
 </body>
 </html>

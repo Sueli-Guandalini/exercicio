@@ -3,15 +3,11 @@
 include "classeReceita.php";
 include "cabecalho.php";
 
-$r = new Receita();
-
-$r->tipo = $_POST["tipo"];
-$r->ingredientes = $_POST["ingredientes"];
-$r->preparo = $_POST["preparo"];
-$r->nome = $_POST["nome"];
+$r = new Receita($_POST);
 
 
-$_SESSION["receita"][] = $r;
+
+$_SESSION["Receita"][] = $r;
 
 ?>
 <h3>Receita inserida com sucesso.</h3>
