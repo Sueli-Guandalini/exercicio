@@ -6,12 +6,26 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <style> input{margin:10px;}</style>
+    <style>
+			fieldset {
+				border: 2px brown solid;
+				border-radius: 10px;
+				width: 25%;
+			}
+			
+			input {
+				background-color: lightblue;
+				text-color: black;
+				font-weight: bold;
+			}
+		
+	</style>
 </head>
 <body>
-<a href="form_livro.php">Cadastrar Livro</a> | 
-<a href="lista_livro.php">Listar Livro</a> |
-<a href="form_filmes.php">Cadastrar Filme</a> | 
-<a href="lista_filmes.php">Listar Filme</a> | 
-<a href="limpar_lista.php">Limpar lista: Livros / Filmes</a>
+<fieldset>
+    <nav>
+        <a href="form_geral.php">Cadastrar</a> | 
+        <a href="lista_geral.php">Listar</a> |
+        <a href="limpar_lista.php">Encerrar</a>
+    </nav>  
 <hr />
