@@ -1,21 +1,21 @@
 <?php
 
-if($_POST["geral"] =='Filme'){
-    require_once "classeFilmes.php";
-    
-    $g = new Filmes($_POST);
+    if($_POST["geral"] == 'Filme'){
+        include "classeFilmes.php";
+        $g = new Filmes($_POST);
 
-}else if($_POST["geral"] =='Livro'){
-    require_once "classeLivro.php";
-    
-    $g = new Livro($_POST);
-}
-session_start();
+    }elseif($_POST["geral"] == 'Livro'){
+        include "classeLivro.php";
+        $g = new Livro($_POST);
+    }
+    session_start();
 
-$_SESSION["geral"][] = $g;
+    $_SESSION["geral"][] = $g;
 
 ?>
-Cadastro realizado com sucesso.
 
-</body>
-</html>
+<meta charset="UTF-8" />
+<script>
+    window.alert("Produto cadastrado com sucesso! \nRedirecionando para página inicial de seleção.");
+    window.location.href= "index.php";
+</script>

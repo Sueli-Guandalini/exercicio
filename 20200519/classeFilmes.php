@@ -14,9 +14,11 @@
         }
 
         public function exibe(){
-            $this->exibe_geral();
+            echo "<nav>";            
+            $this->exibe2();
             echo "Tempo de duração: $this->tempo <br />";
             echo "Produtora: $this->produtora <hr />";
+            echo "</nav>";
         }
     }
 ?>

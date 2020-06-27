@@ -1,25 +1,69 @@
 <?php
-include "classeInput.php";
-include "classeTextarea.php";
+
+include "classeForm.php";
 include "cabecalho.php";
 
-echo'<form action="recebe_form_geral.php" method="POST">';
+$valor["method"]="post";
+$valor["action"]="recebe_form_geral.php";
+$f = new Form($valor);
 
-if(($_POST["geral"] == 'Filme')  || ($_POST["geral"] == 'Livro')){
+$valor["type"]= "text";
+$valor["name"]= "titulo";
 
-    $valor["type"]= "text";
-    $valor["name"]= "titulo";
-    $valor["placeholder"]= "Título...";
-
+if($_POST["geral"] == 'Filme'){
+    echo '<p><b>Cadastro de Filmes</b></p>';
+    $valor["placeholder"]= "Título do filme...";
     $i = new Input($valor);
+    $f->adiciona_entrada($i);
+
+    $valor= null;
+    $valor["type"]= "number";
+    $valor["name"]= "tempo";
+    $valor["class"]= "form-control";
+    $valor["min"]= 1;
+    $valor["step"]= 1;
+    $valor["placeholder"]= "Tempo de duração(min)...";
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
+
+
+    $valor= null;
+    $valor["type"]= "text";
+    $valor["name"]= "produtora";
+    $valor["placeholder"]= "Produtora...";
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
+
+}else{
+    echo '<p><b>Cadastro de Livros</b></p>';
+    $valor["placeholder"]= "Título do Livro...";
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
+
+    $valor= null;
+    $valor["type"]= "number";
+    $valor["name"]= "paginas";
+    $valor["min"]= 1;
+    $valor["step"]= 1;
+    $valor["placeholder"]= "Número de páginas...";
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
+
+    $valor= null;
+    $valor["type"]= "text";
+    $valor["name"]= "editora";
+    $valor["placeholder"]= "Editora...";
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
+}
 
     $valor= null;
     $valor["name"]= "sinopse";
     $valor["rows"]= 3;
-    $valor["cols"]=30;
+    $valor["cols"]= 30;
     $valor["placeholder"]= "Sinopse...";
-
     $t = new Textarea($valor);
+    $f->adiciona_entrada($t);
 
     $valor= null;
     $valor["type"]= "number";
@@ -27,52 +71,25 @@ if(($_POST["geral"] == 'Filme')  || ($_POST["geral"] == 'Livro')){
     $valor["min"]= 1;
     $valor["step"]= 0.01;
     $valor["placeholder"]= "Preço...";
-
     $i = new Input($valor);
+    $f->adiciona_entrada($i);
 
-    if($_POST["geral"]=='Filme'){
+    $valor= null;
+    $valor["type"]= "hidden";
+    $valor["name"]= "geral";
+    $valor["value"]= $_POST["geral"];
+    $i = new Input($valor);
+    $f->adiciona_entrada($i);
 
-        $valor["type"]= "number";
-        $valor["name"]= "tempo";
-        $valor["min"]= 1;
-        $valor["step"]= 1;
-        $valor["placeholder"]= "Tempo de duração...";
-
-        $i = new Input($valor);
-
-        $valor= null;
-        $valor["type"]= "text";
-        $valor["name"]= "produtora";
-        $valor["placeholder"]= "Produtora...";
-
-        $i = new Input($valor);
-
-    } else{
-
-        $valor["type"]= "number";
-        $valor["name"]= "paginas";
-        $valor["min"]= 1;
-        $valor["step"]= 1;
-        $valor["placeholder"]= "Número de páginas...";
-
-        $i = new Input($valor);
-
-        $valor= null;
-        $valor["type"]= "text";
-        $valor["name"]= "editora";
-        $valor["placeholder"]= "Editora...";
-
-        $i = new Input($valor);
-    }
-
+    $valor= null;
     $valor["type"]= "submit";
     $valor["value"]= "Cadastrar";
+    $s = new Input($valor);
+    $f->adiciona_entrada($s);
 
-    $i = new Input($valor);
-    echo'<input name="geral" value='.$_POST["geral"].'/>';
-}
+    $f->exibir();
+
 ?>
-      </form>
     </fieldset>
   </body>
 </html>

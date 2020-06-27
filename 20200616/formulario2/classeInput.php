@@ -34,9 +34,15 @@ class Input extends Entrada{
         if(isset($valor["class"])){
             $this->class = $valor["class"];
         }
+        if(isset($valor["label"])){
+            $this->label = $valor["label"];
+        }
     }  
 
     public function exibir(){
+        if($this->label!= null){
+            echo "<label>$this->label</label>: ";
+        }
         echo "<input type='$this->type' ";
 
         if($this->name!=null){
@@ -52,10 +58,10 @@ class Input extends Entrada{
             echo "class='$this->class' ";
         }
         if($this->required!=null){
-            echo " required";
+            echo "required";
         }
-        echo "/> ";
+        echo "/>";
+        echo "<br />";
     }
 }
-
 ?>

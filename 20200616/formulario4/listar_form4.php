@@ -1,14 +1,13 @@
 <?php
 
-require_once "classeFilmes.php";
-require_once "classeLivro.php";
+require_once "classeForm4.php";
 include "cabecalho.php";
 
 
-		if(!empty($_SESSION["geral"])){
+		if(!empty($_SESSION["Form4"])){
 
-			echo '<p><b>Lista Geral</b></p>';
-			foreach($_SESSION["geral"] as $g){
+			echo '<p><b>Listar Cadastro</b></p>';
+			foreach($_SESSION["Form4"] as $g){
 				print_r(get_class($g));
 				$g->exibe();
 			}

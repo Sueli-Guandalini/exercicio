@@ -52,10 +52,10 @@ class Input extends Entrada{
             echo "class='$this->class' ";
         }
         if($this->required!=null){
-            echo " required";
+            echo "required";
         }
-        echo "/> ";
+        echo "/>";
+        echo "<br />";
     }
 }
-
 ?>

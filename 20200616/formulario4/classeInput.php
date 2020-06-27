@@ -15,28 +15,35 @@ class Input extends Entrada{
         button: value, [id, class] */
 
 
-    public function __construct($valor){
+    public function __construct($valores){
 
-        $this->type = $valor["type"];
+        $this->type = $valores["type"];
         // is sey -> Está "setado" ou preenchido, ou existe a variável.
-        if(isset($valor["name"])){
-            $this->name = $valor["name"];
+        if(isset($valores["name"])){
+            $this->name = $valores["name"];
         }
-        if(isset($valor["placeholder"])){
-            $this->placeholder = $valor["placeholder"];
+        if(isset($valores["placeholder"])){
+            $this->placeholder = $valores["placeholder"];
         }
-        if(isset($valor["value"])){
-            $this->value = $valor["value"];
+        if(isset($valores["value"])){
+            $this->value = $valores["value"];
         }
-        if(isset($valor["required"])){
-            $this->required = $valor["required"];
+        if(isset($valores["required"])){
+            $this->required = $valores["required"];
         }
-        if(isset($valor["class"])){
-            $this->class = $valor["class"];
+        if(isset($valores["class"])){
+            $this->class = $valores["class"];
+        }
+        if(isset($valores["label"])){
+            $this->label = $valores["label"];
         }
     }  
 
     public function exibir(){
+        if($this->label!= null){
+            echo "<label>$this->label</label>: ";
+        }
+
         echo "<input type='$this->type' ";
 
         if($this->name!=null){
@@ -52,10 +59,10 @@ class Input extends Entrada{
             echo "class='$this->class' ";
         }
         if($this->required!=null){
-            echo " required";
+            echo "required";
         }
-        echo "/> ";
+        echo "/>";
+        echo "<br />";
     }
 }
-
 ?>
