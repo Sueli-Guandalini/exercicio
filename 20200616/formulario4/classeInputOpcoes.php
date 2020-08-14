@@ -26,7 +26,8 @@ class InputOpcoes extends Input{
         foreach($this->valueOpcoes as $i=>$v){
             echo "<input
                     type='$this->type'
-                    name='$this->name'
+                    name='$this->name";
+                    if($this)
                     value='".$this->valueOpcoes[$i]."'/>
                     ".$this->labelOpcoes[$i]." ";
                     echo "<br />";

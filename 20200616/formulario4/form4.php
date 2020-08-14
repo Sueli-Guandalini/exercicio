@@ -1,7 +1,7 @@
 <?php
 
 include "cabecalho.php";
-require_once "classeForm.php";
+include "classeForm.php";
 
 $v["method"]="post";
 $v["action"]="recebe_form4.php";
