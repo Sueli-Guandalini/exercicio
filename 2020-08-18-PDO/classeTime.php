@@ -2,14 +2,14 @@
 
     class Time{
         private $nomeTime;
-        private $jogadores;
+        private $jogador;
         private $vitorias;
         private $derrotas;
         private $empates;
 
-        public function __construct($nt, Jogador $j,$v,$d,$emp){
+        public function __construct($nt, Jogador $jog,$v,$d,$emp){
             $this->nomeTime = $nt;
-            $this->jogadores = $j;
+            $this->jogador = $jog;
             $this->vitorias = $v;
             $this->derrotas = $d;
             $this->empates = $emp;
