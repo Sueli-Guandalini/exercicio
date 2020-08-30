@@ -3,7 +3,7 @@
     class Campeonato{
         private $nome;
         private $jogos;
-
+       
         public function __construct($nome){
             $this->nome = $nome;
         }
@@ -13,4 +13,6 @@
         }
 
     }
+
+
 ?>

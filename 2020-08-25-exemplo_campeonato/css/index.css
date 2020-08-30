@@ -1,0 +1,33 @@
+.logotipo{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.logotipo img{
+    height: 50px;
+}
+
+.migalha{
+    margin-top: 80px;
+}
+
+.busca{
+    margin-top: 20px;
+}
+
+.cabecalho h1{
+    margin: 0;
+    font-size: 3em;
+}
+
+.badge-yellow{
+    background-color:#FFFA00;
+}
+.badge-red{
+    background-color:#FF0000;
+}
+
+.badge{
+    border:1px solid;
+    border-color:black;
+}
