@@ -17,6 +17,10 @@ Array (
                     [3] => Array ( 
                             [link] => jogador.php 
                             [label] => Jogadores 
+                        )
+                    [4] => Array ( 
+                            [link] => arbitro.php 
+                            [label] => Arbitros 
                         )                                                 
                 ) 
     )

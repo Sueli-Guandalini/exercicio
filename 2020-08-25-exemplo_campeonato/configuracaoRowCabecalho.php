@@ -1,6 +1,6 @@
 <?php
 $p = null;
-$p["titulo"] = "Time";
-$p["pesquisa"] = "Pesquisar time...";
-
+$p["titulo"] = $titulo;
+$p["pesquisa"] = strtolower($titulo);
+   
 ?>

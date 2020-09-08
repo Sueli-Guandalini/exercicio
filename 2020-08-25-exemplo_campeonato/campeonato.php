@@ -5,9 +5,8 @@
     $cabecalho = new Cabecalho($p);
     $cabecalho->exibe();
 
-    $titulo = "Time";
-    $id = "Time";
-    
+    $titulo = "Campeonato";
+    $id = "Campeonato";
     include "configuracaoBreadCrumb.php";
     $breadcrumb = new BreadCrumb($p);
     $breadcrumb->exibe();
@@ -16,7 +15,7 @@
     $rowCabecalho = new RowCabecalho($p);
     $rowCabecalho->exibe();
 
-    include "configuracaoTabelaTime.php";
+    include "configuracaoTabela$id.php";
     $tabela = new Tabela($p);
     $tabela->exibe();
 
@@ -24,10 +23,12 @@
     $footer = new Footer($p);
     $footer->exibe();
 
-    include "configuracaoModalTime.php";
+
+    include "configuracaoModal$id.php";
     $modal = new Modal($p);
     $modal->exibe();
 ?>
+    
 
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>

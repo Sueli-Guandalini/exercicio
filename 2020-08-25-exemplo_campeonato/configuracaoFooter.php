@@ -1,8 +1,5 @@
 <?php
-
 $p = null;
-$p["botao"] = "#novoTime ";
-$p["titulo"] = "Novo Time";
-
-
+$p["titulo"] = $titulo;
+$p["id_titulo"] = $id;   
 ?>
