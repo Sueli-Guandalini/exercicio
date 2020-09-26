@@ -1,0 +1,22 @@
+Array ( 
+    [logo] => img/logo.png 
+    [alt_logo] => Logotipo Campeonato 
+    [links] => Array ( 
+                    [0] => Array ( 
+                            [link] => campeonato.php 
+                            [label] => Campeonatos
+                        ) 
+                    [1] => Array ( 
+                            [link] => jogo.php 
+                            [label] => Jogos 
+                        ) 
+                    [2] => Array ( 
+                            [link] => time.php 
+                            [label] => Time 
+                        )                         
+                    [3] => Array ( 
+                            [link] => jogador.php 
+                            [label] => Jogadores 
+                        )                                                 
+                ) 
+    )
