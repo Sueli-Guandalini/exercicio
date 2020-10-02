@@ -1,0 +1,40 @@
+Campeonato Object ( 
+    [nome:Campeonato:private] => Campeonato Brasileiro 
+    [jogos:Campeonato:private] => Array ( 
+            [0] => 
+                Jogo Object ( 
+                    [time1:Jogo:private] => Time Object ( 
+                                                [nome:Time:private] => Santos FC 
+                                                [jogadores:Time:private] => Array ( 
+                                                                                [0] => Jogador Object ( 
+                                                                                            [nome:Jogador:private] => Pelé 
+                                                                                            [data_nascimento:Jogador:private] => 20/05/1984 
+                                                                                        ) 
+                                                                                [1] => Jogador Object ( 
+                                                                                            [nome:Jogador:private] => Jose 
+                                                                                            [data_nascimento:Jogador:private] => 20/01/1984 
+                                                                                        ) 
+                                                                                ) 
+                                                [cidade:Time:private] => Santos 
+                                                [estado:Time:private] => SP 
+                                            ) 
+                    [time2:Jogo:private] => Time Object ( 
+                                                [nome:Time:private] => Fluminense 
+                                                [jogadores:Time:private] => Array ( 
+                                                                                [0] => Jogador Object ( 
+                                                                                            [nome:Jogador:private] => Joao 
+                                                                                            [data_nascimento:Jogador:private] => 30/01/1990
+                                                                                        ) 
+                                                                                [1] => Jogador Object ( 
+                                                                                            [nome:Jogador:private] => Maradona 
+                                                                                            [data_nascimento:Jogador:private] => 20/04/1984 
+                                                                                        ) 
+                                                                                ) 
+                                                [cidade:Time:private] => Rio de Janeiro 
+                                                [estado:Time:private] => RJ 
+                                            ) 
+                    [gol_time1:Jogo:private] => 0 
+                    [gol_time2:Jogo:private] => 0 
+                    [data:Jogo:private] => 05/09/2020 
+                    [horario:Jogo:private] => 21:30 
+                )

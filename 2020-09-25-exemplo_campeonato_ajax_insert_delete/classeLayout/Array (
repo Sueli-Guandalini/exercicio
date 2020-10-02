@@ -1,0 +1,28 @@
+Array ( 
+    [cabecalho] => Array (
+                    [0] => Nome 
+                    [1] => Cidade 
+                    [2] => Estado 
+                    ) 
+    [dados] => Array ( 
+                    [0] => Array ( 
+                            [id_time] => 3 
+                            [0] => 3 
+                            [nome] => Flamengo 
+                            [1] => Flamengo 
+                            [cidade] => Rio De Janeiro 
+                            [2] => Rio De Janeiro 
+                            [uf] => RJ 
+                            [3] => RJ 
+                        ) 
+                        
+                    [1] => Array ( 
+                        [id_time] => 4 
+                        [0] => 4 
+                        [nome] => Flamengo 
+                        [1] => Flamengo 
+                        [cidade] => Rio De Janeiro 
+                        [2] => Rio De Janeiro 
+                        [uf] => RJ 
+                        [3] => RJ 
+                    ) [2] => Array ( [id_time] => 7 [0] => 7 [nome] => Palmeiras [1] => Palmeiras [cidade] => São Paulo [2] => São Paulo [uf] => SP [3] => SP ) [3] => Array ( [id_time] => 8 [0] => 8 [nome] => Santos [1] => Santos [cidade] => Santos [2] => Santos [uf] => SP [3] => SP ) [4] => Array ( [id_time] => 2 [0] => 2 [nome] => São Paulo Futebol Clube [1] => São Paulo Futebol Clube [cidade] => São Paulo [2] => São Paulo [uf] => SP [3] => SP ) ) )
